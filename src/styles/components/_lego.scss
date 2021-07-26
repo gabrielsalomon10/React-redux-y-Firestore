@@ -1,0 +1,97 @@
+
+
+.lego__main-content{
+    display: flex;
+}
+
+.lego__sidebar{
+    background-color: $dark-grey;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 450px;
+}
+
+.lego__sidebar-navbar{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    
+    &:hover{
+        color: darken($color: white, $amount: 20);
+    }
+}
+
+.lego__sidebar-navbar h3{
+    font-weight: lighter;
+}
+
+.lego__new-entry{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+
+    transition: color 0.3s ease;
+    
+    &:hover{
+        color: darken($color: white, $amount: 20);
+    }
+
+}
+
+.lego__entries{
+    flex: 1 1 auto;
+    margin-top: 30px;
+    overflow: scroll;
+}
+
+.lego__entry{
+    background-color: white;
+    border-radius: 4px;
+    color: $dark-grey;
+    display: flex;
+    margin-bottom: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.lego__entry-list{
+    height: 75px;
+    width: 75px;
+}
+
+.lego__entry-body{
+    padding: 16px;
+}
+
+.lego__entry-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.lego__entry-content{
+    font-size: 16px;
+}
+
+.lego__entry-date{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+.lego__entry-date span{
+    font-size: 14px;
+}
+
+.lego__table{
+    border: 1px solid black;
+}
